@@ -13,7 +13,7 @@ class App:
             print("Incorrect date format, should be YYYY-MM-DD")
             self.add_expense()
         category = input("Enter the category: ")
-        amount = float(input("Enter the amount: "))
+        amount = input("Enter the amount: ")
         data_row = (date, category,amount)
         connection.create_table()
         connection.mycursor.execute(queries.add_data, data_row)

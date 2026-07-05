@@ -18,13 +18,13 @@ class menus:
             elif operation == 4:
                 operations.obj.update_expense()
             elif operation == 5:
-                self.feaching()
+                self.fetching()
             elif operation == 0:
                 print("Exiting the application.")
                 exit()
             else:
                 print('Invalid choice. Please try again.')
-    def feaching(self):
+    def fetching(self):
         print("1. Monthly Spending Report")
         print("2. Highest Expense")
         print('3. Category-wise Expense Report')

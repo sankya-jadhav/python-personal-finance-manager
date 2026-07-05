@@ -8,34 +8,34 @@ class Operations:
         rows = connection.mycursor.fetchall()
         for row in rows:
             print(f'Month : {row[0]} , Monthly_spending : {row[1]}')
-        main.obj.feaching()
+        main.obj.fetching()
     def highest_expense(self):
         
         connection.mycursor.execute(queries.h_query);
         rows = connection.mycursor.fetchall()
         for row in rows:
             print(f'Expense No: {row[0]}, Date: {row[1]}, Category: {row[2]}, Amount: {row[3]}')
-        main.obj.feaching()
+        main.obj.fetching()
     def category_wise_expense(self):
        
         connection.mycursor.execute(queries.c_query);
         rows = connection.mycursor.fetchall()
         for row in rows:
             print(f'Category: {row[0]}, Total Amount: {row[1]}')
-        main.obj.feaching()
+        main.obj.fetching()
     def average_expense(self):
         
         connection.mycursor.execute(queries.a_query);
         rows = connection.mycursor.fetchall()
         for row in rows:
             print(f'Average Amount: {row[0]}')
-        main.obj.feaching()
+        main.obj.fetching()
     def total_expense(self):
         
         connection.mycursor.execute(queries.t_query);
         rows = connection.mycursor.fetchall()
         for row in rows:
             print(f'Total Amount: {row[0]}')
-        main.obj.feaching()
+        main.obj.fetching()
               
 obj = Operations()
